@@ -1,0 +1,37 @@
+{
+  "name": "post-css-test",
+  "version": "1.0.0",
+  "description": "postCSS使ってみる",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikimetal/post-css-test.git"
+  },
+  "keywords": [
+    "post-css"
+  ],
+  "author": "kiki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kikimetal/post-css-test/issues"
+  },
+  "homepage": "https://github.com/kikimetal/post-css-test#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "precss": "^2.0.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}

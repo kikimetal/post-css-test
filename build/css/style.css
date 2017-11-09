@@ -1,0 +1,53 @@
+body{
+    background: #efefef;
+    color: #333;
+    font-family: monospace;
+}
+
+.margin-5px, .btn{
+    margin: 5px;
+}
+
+.btn{
+    width: 200px;
+    /*width: fit-content;*/
+    padding: 10px 20px;
+    background: #99bbff;
+    border-radius: 4px;
+    color: white;
+    background: pink;
+}
+
+#page {
+    display: grid;
+    width: 100%;
+    height: 200px;
+    grid-template:
+        [header-left] "head head" 30px [header-right]
+        [main-left]   "nav  main" 1fr  [main-right]
+        [footer-left] "nav  foot" 30px [footer-right]
+        / 120px 1fr;
+}
+
+#page header {
+        background-color: skyblue;
+        grid-area: head;
+    }
+
+#page nav {
+        background-color: lightblue;
+        grid-area: nav;
+    }
+
+#page main {
+        background-color: yellow;
+        grid-area: main;
+    }
+
+#page footer {
+        background-color: red;
+        grid-column: foot;
+    }
+
+
+/*# sourceMappingURL=style.css.map */

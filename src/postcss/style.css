@@ -1,0 +1,50 @@
+body{
+    background: #efefef;
+    color: #333;
+    font-family: monospace;
+}
+
+@define-mixin btn $width, $background{
+    width: $width;
+    /*width: fit-content;*/
+    padding: 10px 20px;
+    background: $background;
+    border-radius: 4px;
+    color: white;
+}
+.margin-5px{
+    margin: 5px;
+}
+.btn{
+    @extend .margin-5px;
+    @mixin btn 200px, #99bbff;
+    background: pink;
+}
+
+#page {
+    display: grid;
+    width: 100%;
+    height: 200px;
+    grid-template:
+        [header-left] "head head" 30px [header-right]
+        [main-left]   "nav  main" 1fr  [main-right]
+        [footer-left] "nav  foot" 30px [footer-right]
+        / 120px 1fr;    
+    header {
+        background-color: skyblue;
+        grid-area: head;
+    }
+    nav {
+        background-color: lightblue;
+        grid-area: nav;
+    }
+    main {
+        background-color: yellow;
+        grid-area: main;
+    }
+    footer {
+        background-color: red;
+        grid-column: foot;
+    }
+}
+
